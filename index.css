@@ -1,0 +1,112 @@
+body{
+    background-image: url("https://i.pinimg.com/originals/11/b6/76/11b6769c8f2ea91b25fa0bb10bcaf4ab.jpg");
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    color: white;
+    font-family: Roboto, sans-serif, Arial;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.center{
+    text-align: center;
+}
+
+#mainwrapper{
+    width: 900px;
+    max-width: 95%;
+    background-color: #00000041;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.centerwrapper{
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    width: 100vw;
+}
+
+.selectcategory{
+    display: block;
+}
+
+.selectcategory{
+    background-color: rgb(66, 169, 243);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    border: white 5px solid;
+}
+
+.selectcategory:hover{
+    text-decoration: underline;
+    background-color: rgb(47, 151, 224);
+}
+
+.articleswrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article{
+    background-color: #ffffff48;
+    margin: 10px;
+    text-align: center;
+    border: 3px white solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (orientation: landscape){
+    .article{
+        flex: 0 0 calc(20% - 26px);
+    }
+}
+
+@media (orientation: portrait){
+    .article{
+        flex: 0 0 calc(100% - 26px);
+    }
+}
+
+.articlelink:hover{
+    text-decoration: underline;
+}
+
+.articlelink{
+    color: rgb(47, 151, 224);
+    font-size: 2rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-decoration: none;
+}
+
+.articleimg{
+    aspect-ratio: 5/3;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.articlesource{
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.imgwrapper{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
