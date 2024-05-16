@@ -62,7 +62,7 @@ body{
 }
 
 .article{
-    background-color: #ffffff48;
+    background-color: #cedff0;
     margin: 10px;
     text-align: center;
     border: 3px white solid;
@@ -72,10 +72,31 @@ body{
 }
 
 @media (orientation: landscape){
-    .article{
-        flex: 0 0 calc(20% - 26px);
+    @media screen and (min-width: 1114px){
+        .article{
+            flex: 0 0 calc(20% - 26px);
+        }
     }
 }
+
+@media (orientation: landscape){
+    @media screen and (max-width: 1114px){
+    .article{
+        flex: 0 0 calc(25% - 26px);
+    }
+    }
+}
+
+
+@media (orientation: landscape){
+    @media screen and (max-width: 890px) {
+        .article{
+            flex: 0 0 calc(33.33% - 26px);
+        }
+    }
+}
+
+
 
 @media (orientation: portrait){
     .article{
@@ -88,10 +109,11 @@ body{
 }
 
 .articlelink{
-    color: rgb(47, 151, 224);
-    font-size: 2rem;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: rgb(49 145 213);
+    font-size: 1.25rem;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .articleimg{
@@ -102,7 +124,7 @@ body{
 
 .articlesource{
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .imgwrapper{
